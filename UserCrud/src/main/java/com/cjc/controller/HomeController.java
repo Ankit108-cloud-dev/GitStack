@@ -1,10 +1,14 @@
 package com.cjc.controller;
 
+
+
+import com.cjc.modle.User;
+import java.util.List;
+
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.cjc.modle.User;
 
 @RestController
 public class HomeController {
@@ -17,5 +21,14 @@ public class HomeController {
 		return "Data Added";
 	}
 
+	
+	@GetMapping
+	public List<String> getData(){
+		
+		
+		
+		return null;
+	}
+	
 
 }
